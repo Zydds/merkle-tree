@@ -1,0 +1,7 @@
+metric,sha256_mean,blake3_mean,t_statistic,p_value,significant
+Waktu Build (ms),22403.3016,23880.455378,-0.1264,0.901018,Tidak
+Waktu Verifikasi (ms),3318.010233,3184.993689,0.081,0.93648,Tidak
+Throughput (entri/detik),4672.648889,4385.104444,2.3351,0.032891,Ya
+Akurasi Deteksi (%),100.0,100.0,,,Tidak
+Peak Memory (KB),24507.973178,24509.8495,-0.0002,0.999882,Tidak
+Kecepatan Hash per Entri (µs),5.370808,4.40317,2.2837,0.036391,Ya

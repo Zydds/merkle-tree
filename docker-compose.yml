@@ -1,0 +1,34 @@
+services:
+
+  log-generator:
+    build: ./log-generator
+    container_name: log-generator
+    volumes:
+      - ./data:/app/data
+    networks:
+      - research-net
+
+  merkle-engine:
+    build: ./merkle-engine
+    container_name: merkle-engine
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+    depends_on:
+      - log-generator
+    networks:
+      - research-net
+
+  analysis:
+    build: ./analysis
+    container_name: analysis
+    volumes:
+      - ./results:/app/results
+    depends_on:
+      - merkle-engine
+    networks:
+      - research-net
+
+networks:
+  research-net:
+    driver: bridge

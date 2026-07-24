@@ -1,0 +1,21 @@
+{
+  "experiment_folder": "experiment2",
+  "run_timestamp": "2026-06-02 00:35:13",
+  "log_sizes": {
+    "small": 10000,
+    "medium": 50000,
+    "large": 250000
+  },
+  "algorithms": [
+    "SHA256",
+    "BLAKE3"
+  ],
+  "tamper_positions": [
+    "first",
+    "middle",
+    "last"
+  ],
+  "tamper_random_range_pct": 2.0,
+  "repeat_per_scenario": 5,
+  "total_scenarios": 18
+}
